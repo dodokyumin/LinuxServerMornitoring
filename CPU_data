@@ -1,0 +1,1 @@
+sar 1 1 | grep Average | awk '{print "CPU_FREE=" $8 ";\nCPU_USED="100-$8";"}'

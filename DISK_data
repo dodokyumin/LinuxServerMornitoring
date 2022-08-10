@@ -1,0 +1,1 @@
+df -k | grep -v Filesystem | awk '{sum += $4} END {print"DSK_FREE=" sum ";"}''{sum2 += $3} END {print"DSK_USED=" sum2 ";"}'
